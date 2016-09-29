@@ -12,13 +12,37 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome');;
 });
 
-Route::get('home', function () {
+Route::get('/home', function () {
 	return view('home');
 });
 
-Route::get('news', function () {
+Route::get('home/news', function () {
 	return view('news');
+});
+
+Route::get('home/products', function () {
+	return view('products');
+});
+
+Route::get('home/about', function () {
+	return view('about');
+});
+
+Route::get('home/ourwork', function () {
+	return view('ourwork');
+});
+
+Route::get('home/signup', function () {
+	return view('signup');
+});
+
+Route::get('home/search', function () {
+	return view('search');
+});
+
+Route::get('home/social', function () {
+	return view('social');
 });
