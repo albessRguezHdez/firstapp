@@ -15,21 +15,13 @@ Route::get('/', function () {
     return view('welcome');;
 });
 
-Route::get('/home', function () {
-	return view('home');
-});
+Route::get('/home', 'GeneralController@home');
 
-Route::get('home/news', function () {
-	return view('news');
-});
+Route::get('home/news', 'GeneralController@news');
 
-Route::get('home/products', function () {
-	return view('products');
-});
+Route::get('home/products', 'GeneralController@products');
 
-Route::get('home/about', function () {
-	return view('about');
-});
+Route::get('home/about', 'GeneralController@about');
 
 Route::get('home/ourwork', function () {
 	return view('ourwork');
