@@ -6,12 +6,22 @@
                 <div class="title">Nuevas/News</div>
             </div>
             <div>
-        		<section>
-        			This section number one
-        		</section>
-        		<section>
-        			This section number two
-        		</section>
+                @if($theNews)
+        		    <ul>
+                        @foreach($theNews as $news)
+                            <li>{{ $news }}</li>
+                        @endforeach      
+                    </ul>
+                @else
+                    <ul>
+                        <li>No hay noticias.</li>
+                    </ul>
+                @endif
+        		<ul>
+                    @foreach($theOptionsNews as $optionsNews)
+                        <li>{{ $optionsNews }}</li>
+                    @endforeach  
+                </ul>
         	</div>
             <div>
                 Eventos.

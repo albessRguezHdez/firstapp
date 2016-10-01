@@ -15,13 +15,13 @@ Route::get('/', function () {
     return view('welcome');;
 });
 
-Route::get('/home', 'GeneralController@home');
+Route::get('/home', 'GeneralController@showHome');
 
-Route::get('home/news', 'GeneralController@news');
+Route::get('home/news', 'GeneralController@showNews');
 
-Route::get('home/products', 'GeneralController@products');
+Route::get('home/products', 'GeneralController@showProducts');
 
-Route::get('home/about', 'GeneralController@about');
+Route::get('home/about', 'GeneralController@showAbout');
 
 Route::get('home/ourwork', function () {
 	return view('ourwork');
