@@ -45,4 +45,25 @@ class GeneralController extends Controller
     public function showAbout(){
     	return view('about');
     }
+
+    //ourwork:
+    //Manda a llamar la View de ourwork
+    public function showOurwork(){
+        return view('ourwork');
+    }
+
+    //--------------------------------------------
+    //Pendiente iniciar sesión
+
+    //search:
+    //Manda a llamar la View de search
+    public function showSearch(){
+        return view('search');
+    }
+
+    //social:
+    //Manda a llamar la View de social
+    public function showSocial(){
+        return view('social');
+    }
 }

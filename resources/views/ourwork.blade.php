@@ -4,6 +4,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Nuestro trabajo/Our work</div>
+                <h2>Nuestro trabajo/Our work</h2>
             </div>
             <div>
         		<section>
@@ -13,9 +14,6 @@
                     Applications
                 </section>
         	</div>
-            <footer>
-                @PuntoCreativoStudio. 2016.
-            </footer>
         </div>
         
 @stop

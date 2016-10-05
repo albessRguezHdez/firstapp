@@ -4,13 +4,8 @@
         <div class="container">
             <div class="content">
                 <div class="title">Buscar/Search</div>
+                <h2>Buscar...</h2>
             </div>
-            <div>
-        		<h2>Buscar...</h2>
-        	</div>
-            <footer>
-                @PuntoCreativoStudio. 2016.
-            </footer>
         </div>
         
 @stop

@@ -4,6 +4,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Nuevas/News</div>
+                <h2>Nuevas/News</h2>
             </div>
             <div>
                 @if($theNews)
@@ -26,15 +27,6 @@
             <div>
                 Eventos.
             </div>
-            <footer>
-                @PuntoCreativoStudio. 2016.
-            </footer>
-        </div>
-        <div>
-            Colaboración.
-        </div>
-        <div>
-            Participación & desarrollo.
         </div>
         
 @stop
