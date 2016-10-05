@@ -33,23 +33,23 @@
 			        <li><a href="{{ URL::to('/home/ourwork') }}">OUR WORK<span></span></a></li>
 			        <li><a href="{{ URL::to('/home/signup') }}">SIGN UP<span></span></a></li>
 			        <li><a href="{{ URL::to('/home/search') }}">SEARCH<span></span></a></li>
-			        <li><a href="{{ URL::to('/home/social') }}">SOCIAL<span></span></a></li>
-                    
-		        </ul>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Buscar">
-                    </div>
-                    <button type="submit" class="btn btn-default">Buscar</button>
-                </form>
+			        <li><a href="{{ URL::to('/home/social') }}">SOCIAL<span></span></a></li>      
+		            <li>
+                        <form class="navbar-form navbar-left">
+                            <!--<div class="form-group">-->
+                            <input type="text" class="form-control" placeholder="Buscar">
+                            <button type="submit" class="btn btn-default">Buscar</button>
+                        </form>
+                    </li>
+                </ul>
 	        </div> <!-- collapse navbar-collapse -->
         </div> <!-- container-fluid -->
     </nav>
 	@yield('content')
 
-    <div class="footer">
+    <footer>
         @PuntoCreativoStudio. 2016.
-    </div>
+    </footer>
 
 </body>
 </html>

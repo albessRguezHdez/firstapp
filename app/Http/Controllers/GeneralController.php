@@ -37,7 +37,11 @@ class GeneralController extends Controller
     //products:
     //Manda a llamar la View de products
     public function showProducts(){
-    	return view('products');
+    	$theProductsVideos = array('productOne' => 'Video', 'contentProductVideo' => 'Vídeos');
+        $theOptionsVideos = array("Vídeo 1", "Vídeo 2", "Vídeo 3", "Vídeo 4");
+        $theProductsImages = array('productTwo' => 'Image', 'contentProductImages' => 'Imágenes');
+        $theOptionsImages = array("Imagen 1", "Imagen 2", "Imagen 3", "Imagen 4");
+        return view('products', array('theProductsVideos' => $theProductsVideos, 'theOptionsVideos' => $theOptionsVideos, 'theProductsImages' => $theProductsImages, 'theOptionsImages' => $theOptionsImages));
     }
 
     //about:

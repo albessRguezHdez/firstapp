@@ -18,11 +18,11 @@
                         <li>No hay noticias.</li>
                     </ul>
                 @endif
-        		<ul>
-                    @foreach($theOptionsNews as $optionsNews)
-                        <li>{{ $optionsNews }}</li>
-                    @endforeach  
-                </ul>
+        		    <ul>
+                        @foreach($theOptionsNews as $optionsNews)
+                            <li>{{ $optionsNews }}</li>
+                        @endforeach  
+                    </ul>
         	</div>
             <div>
                 Eventos.
