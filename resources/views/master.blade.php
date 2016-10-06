@@ -48,7 +48,11 @@
 	@yield('content')
 
     <footer>
-        @PuntoCreativoStudio. 2016.
+    	<address>
+    		<strong>Punto Creativo Studio</strong><br>
+    		<a href="mailto:#">@PuntoCreativoStudio. 2016.</a>
+    	</address>
+        
     </footer>
 
 </body>

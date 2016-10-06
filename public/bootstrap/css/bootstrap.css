@@ -25,6 +25,7 @@ div {
 figcaption,
 figure,
 footer {
+  color: black;
   text-align: center;
   font-family: 'Times';
   font-size: 10px;

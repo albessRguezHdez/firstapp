@@ -1,10 +1,10 @@
 @extends('master')
 
 @section('content')
-        <div class="container">
-            <div class="content">
-                <div class="title">Nuevas/News</div>
-                <h2>Nuevas/News</h2>
+        <div class="container-fluid">
+            <div>
+                <div class="title">News</div>
+                <h2>Noticias</h2>
             </div>
             <div>
                 @if($theNews)

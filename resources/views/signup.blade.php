@@ -1,10 +1,10 @@
 @extends('master')
 
 @section('content')
-        <div class="container">
-            <div class="content">
-                <div class="title">Ingresar/Sign Up</div>
-                <h2>Ingresar/Sign Up</h2>
+        <div class="container-fluid">
+            <div>
+                <div class="title">Sign Up</div>
+                <h2>Ingresar</h2>
             </div>
             <div>
         		<h3>Iniciar sesión.</h3>
@@ -12,18 +12,20 @@
         	</div>
         </div>
 
-        <div class="rows">
-            {!! Form::open(['url'=>'home/access', 'method' => 'post', 'class' => 'form-horizontal']) !!}
+        <div class="row">
+            {!! Form::open(['url'=>'home/access', 'method' => 'post']) !!}
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
                 <div class="form-group">
                 {!! Form::label('email', 'E-mail Address') !!}
                 {!! Form::text('email') !!}
                 </div>
-
                 <div class="form-group">
                 {!! Form::label('password', 'Password') !!}
                 {!! Form::password('password', ['class' => 'awesome']) !!}
                 </div>
-
                 <div class="form-group">
                 {!! Form::label('os','Operating System') !!}
                 {!! Form::select('os', array(
@@ -32,21 +34,21 @@
                     'win' => 'Windows'
                 )) !!}
                 </div>
-
                 <div class="form-group">
                 {!! Form::label('comment', 'Comments') !!}
                 {!! Form::textarea('comment', '', array('placeholder' => 'What are your interests?')) !!}
                 </div>
-
                 <div class="form-group">
                 {!! Form::checkbox('agree','yes', false) !!}
                 {!! Form::label('agree','I agree to your terms of service.') !!}
                 </div>
-
                 <div class="form-group">
-                {!! Form::submit('Sign Up', array('class' => 'btn btn-primary')) !!}
+                {!! Form::submit('Sign Up', array('class' => 'btn btn-default')) !!}
                 </div>
-
+            </div>
+            <div class="col-md-4">
+                
+            </div>
             {!! Form::close() !!}
         </div>
 @stop

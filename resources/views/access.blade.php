@@ -1,10 +1,10 @@
 @extends('master')
 
 @section('content')
-        <div class="container">
-            <div class="content">
+        <div class="container-fluid">
+            <div>
                 <div class="title">Bienvenido: {{ $theEmail }}</div>
-                <h2>Operative System: {{ $theOS }}</h2>
+                <div class="title">Operative System: {{ $theOS }}</div>
             </div>
             <div>
         		Your interests: <br>

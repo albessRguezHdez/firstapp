@@ -1,9 +1,9 @@
 @extends('master')
 
 @section('content')
-        <div class="container">
-            <div class="content">
-                <div class="title">Acerca de Punto Creativo Studio</div>
+        <div class="container-fluid">
+            <div>
+                <div class="title">About of Punto Creativo Studio</div>
                 <h2>Acerca de Punto Creativo Studio</h2>
             </div>
         </div>

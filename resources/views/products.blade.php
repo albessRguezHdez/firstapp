@@ -1,10 +1,10 @@
 @extends('master')
 
 @section('content')
-        <div class="container">
-            <div class="content">
-                <div class="title">Productos/Products</div>
-                <h2>Productos/Products</h2>
+        <div class="container-fluid">
+            <div>
+                <div class="title">Products</div>
+                <h2>Productos</h2>
             </div>
             <div>
         		Productos
@@ -13,37 +13,37 @@
         <div class="rows">
         	<div class="col-md-6">
                 @if($theProductsVideos)
-        		    <ul>
+        		    <ul class="glyphicon glyphicon-facetime-video list-group">
                         @foreach($theProductsVideos as $productsVideos)
-                            <li>{{ $productsVideos }}</li>
+                            <li class="list-group-item">{{ $productsVideos }}</li>
                         @endforeach      
                     </ul>
                 @else
-                    <ul>
-                        <li>No hay vídeos.</li>
+                    <ul class="glyphicon glyphicon-facetime-video list-group">
+                        <li class="list-group-item">No hay vídeos.</li>
                     </ul>
                 @endif
-        		    <ul>
+        		    <ul class="glyphicon glyphicon-facetime-video list-group">
                         @foreach($theOptionsVideos as $optionsVideos)
-                            <li>{{ $optionsVideos }}</li>
+                            <li class="list-group-item">{{ $optionsVideos }}</li>
                         @endforeach  
                     </ul>
         	</div>
         	<div class="col-md-6">
                 @if($theProductsImages)
-        		    <ul>
+        		    <ul class="glyphicon glyphicon-picture list-group">
                         @foreach($theProductsImages as $productsImages)
-                            <li>{{ $productsImages }}</li>
+                            <li class="list-group-item">{{ $productsImages }}</li>
                         @endforeach      
                     </ul>
                 @else
-                    <ul>
-                        <li>No hay imágenes.</li>
+                    <ul class="glyphicon glyphicon-picture list-group">
+                        <li class="list-group-item">No hay imágenes.</li>
                     </ul>
                 @endif
-        		    <ul>
+        		    <ul class="glyphicon glyphicon-picture list-group">
                         @foreach($theOptionsImages as $optionsImages)
-                            <li>{{ $optionsImages }}</li>
+                            <li class="list-group-item">{{ $optionsImages }}</li>
                         @endforeach  
                     </ul>
         	</div>
