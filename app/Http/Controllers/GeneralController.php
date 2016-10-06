@@ -70,4 +70,30 @@ class GeneralController extends Controller
     public function showSocial(){
         return view('social');
     }
+
+    //sign up:
+    //Manda a llamar la View de Inicio de sesión
+    public function showSignUp(){
+        return view('signup');
+    }
+
+    //access:
+    //Manda a llamar la View de access luego de iniciar sesión
+    public function showAccess(Request $request){
+        $inEmail = $request -> input('email');
+        $inPassword = $request -> input('password');
+        $inOS = $request -> input('os');
+        $inComment = $request -> input('comment');
+        $inAgree = $request -> input('agree');
+        $message = '';
+        if ($inAgree) {
+            $message = true;
+            # code...
+            return view('access', array('theEmail' => $inEmail, 'theOS' => $inOS, 'theInterests' => $inComment, 'message' => $message ));
+        }else{
+            $message = false;
+            return view('access', array('theEmail' => $inEmail, 'theOS' => $inOS, 'theInterests' => $inComment, 'message' => $message ));
+        }
+        
+    }
 }

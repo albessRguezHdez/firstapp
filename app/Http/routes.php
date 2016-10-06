@@ -25,9 +25,11 @@ Route::get('home/about', 'GeneralController@showAbout');
 
 Route::get('home/ourwork', 'GeneralController@showOurwork');
 
-Route::get('home/signup', function () {
-	return view('signup');
-});
+Route::get('home/signup', 'GeneralController@showSignup');
+//Pendiente revisar funciones por default:
+//AuthController@validator
+//AuthController@create
+Route::post('home/access', 'GeneralController@showAccess');
 
 Route::get('home/search', 'GeneralController@showSearch');
 
