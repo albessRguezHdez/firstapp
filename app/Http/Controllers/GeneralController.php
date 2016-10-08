@@ -22,18 +22,6 @@ class GeneralController extends Controller
     	return view('news', array('theNews' => $theNews, 'theOptionsNews' => $theOptionsNews));
     }
 
-    public function createNews(){
-
-    }
-
-    public function updateNews(){
-
-    }
-
-    public function deleteNews(){
-
-    }
-
     //products:
     //Manda a llamar la View de products
     public function showProducts(){
@@ -93,7 +81,6 @@ class GeneralController extends Controller
         }else{
             $message = false;
             return view('access', array('theEmail' => $inEmail, 'theOS' => $inOS, 'theInterests' => $inComment, 'message' => $message ));
-        }
-        
+        } 
     }
 }
